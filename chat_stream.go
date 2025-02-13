@@ -14,6 +14,8 @@ type ChatCompletionStreamChoiceDelta struct {
 
 	// ReasoningContent reasoning_content for deepseek
 	ReasoningContent string `json:"reasoning_content,omitempty"`
+	// Reasoning reasoning for OpenRouter
+	Reasoning string `json:"reasoning,omitempty"`
 }
 
 type ChatCompletionStreamChoiceLogprobs struct {
