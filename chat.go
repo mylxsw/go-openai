@@ -276,6 +276,10 @@ type ChatCompletionRequest struct {
 
 	// OpenRouter specific fields
 	IncludeReasoning bool `json:"include_reasoning,omitempty"`
+	Plugins          any  `json:"plugins,omitempty"`
+	Provider         any  `json:"provider,omitempty"`
+	Models           any  `json:"models,omitempty"`
+	Transforms       any  `json:"transforms,omitempty"`
 }
 
 type StreamOptions struct {
