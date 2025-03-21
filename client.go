@@ -159,7 +159,7 @@ func (c *Client) sendRequestRaw(req *http.Request) (response RawResponse, err er
 
 func sendRequestStream[T streamable](client *Client, req *http.Request) (*streamReader[T], error) {
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Accept", "text/event-stream")
+	//req.Header.Set("Accept", "text/event-stream")
 	req.Header.Set("Cache-Control", "no-cache")
 	req.Header.Set("Connection", "keep-alive")
 
